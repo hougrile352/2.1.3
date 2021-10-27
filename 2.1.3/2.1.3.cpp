@@ -3,9 +3,24 @@
 
 #include <iostream>
 
+using namespace std;
+
+int dividerFunction(int num1, int num2)
+{
+    return (num1 / 5) && (num2 / 5);
+}
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    int firstnumber; int secondnumber;
+    
+    cout << "First number?\n";
+    cin >> firstnumber;
+
+    cout << "Second number?\n";
+    cin >> secondnumber;
+
+    cout << dividerFunction(firstnumber, secondnumber);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
